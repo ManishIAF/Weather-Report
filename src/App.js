@@ -23,7 +23,7 @@ function App() {
     
     event.preventDefault() 
 
-    axios.get('http://localhost:8000/api/weatherReport',{
+    axios.get('https://weather-report-server-ncdj.onrender.com/api/weatherReport',{
       params: {city:cityName},
     }).then((response)=>{
       setWeatherReport(response?.data)
